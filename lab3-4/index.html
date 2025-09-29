@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="display: flex; flex-direction: column; margin-bottom: 20px;">
+        <a href="../index.html">Назад</a>
+        <a href="./1index.html">Лаб 4</a>
+    </div>
+    <script>
+        let N = prompt("Введите N", 4)
+        let array = []
+        createNaturalArray(N)
+        function createNaturalArray(arg) {
+            for (let i = 1; i <= arg; i++) {
+                array.push(i);
+            }
+        }
+        console.log(array)
+        document.write(`Массив: ${array}`);
+    </script>
+</body>
+</html>
