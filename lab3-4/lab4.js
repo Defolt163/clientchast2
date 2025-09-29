@@ -7,3 +7,5 @@ let rectangle = {
 };
 document.write(`Объект: ${rectangle} <br/><br/>`);
 document.write(`Распарсеный объект: <br/> Название: ${rectangle.name} <br/> Ширина: ${rectangle.width} <br/> Высота: ${rectangle.height} <br/> Цвет: ${rectangle.color}`);
+
+

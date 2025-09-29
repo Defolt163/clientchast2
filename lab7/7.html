@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab-7</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Калькулятор систем счисления</h1>
+        <p class="subtitle">Перевод чисел между системами счисления с основанием от 2 до 36</p>
+        
+        <div class="calculator">
+            <div class="input-section">
+                <h2>Ввод данных</h2>
+                <div class="form-group">
+                    <label for="number">Число для перевода:</label>
+                    <input type="text" id="number" placeholder="Введите число (например: 101.1, A5.F, 123.45)">
+                </div>
+                
+                <div class="form-group">
+                    <label for="fromBase">Исходная система счисления:</label>
+                    <input type="number" id="fromBase" min="2" max="36" value="10" placeholder="Основание (2-36)">
+                </div>
+                
+                <div class="form-group">
+                    <label for="toBase">Целевая система счисления:</label>
+                    <input type="number" id="toBase" min="2" max="36" value="2" placeholder="Основание (2-36)">
+                </div>
+                
+                <button class="button" id="convertBtn">Перевести</button>
+                <a class="button" href="../index.html">Назад</a>
+            </div>
+            
+            <div class="output-section">
+                <h2>Результат перевода</h2>
+                <div class="result">
+                    <h3>Результат:</h3>
+                    <div class="result-value" id="resultValue">-</div>
+                </div>
+                
+                <div class="error" id="errorMessage" style="display: none;"></div>
+    
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 5</title>
+</head>
+<body>
+    <div style="display: flex; flex-direction: column; margin-bottom: 20px;">
+        <a href="../index.html">Назад</a>
+        <a href="./6.html">Лаб 6</a>
+    </div>
+    <script>
+
+        const users = [
+            { name: "Анна", age: 25 },
+            { name: "Иван", age: 30 },
+            { name: "Мария", age: 22 },
+            { name: "Петр", age: 35 }
+        ];
+        function getAverageAge(peoples){
+            let ageSum = 0
+            for(i = 0; i < peoples.length; i++){
+                ageSum += peoples[i].age
+            };
+            let averageAge = ageSum/peoples.length
+            document.write(`Средний возраст: ${averageAge}`);
+        };
+        getAverageAge(users)
+    </script>
+</body>
+</html>
